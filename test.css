@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: rgb(54, 54, 54);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#game {
+  width: 500px;
+  height: 200px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(75, 74, 74);
+  background-image: url(./image/Chasm2.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: black 0px 0px 15px 10px;
+  margin: auto;
+}
+
+#character {
+  width: 20px;
+  height: 32px;
+  position: relative;
+  top: 170px;
+  left: 20px;
+}
+.jump {
+  animation: jump 500ms;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+    top: 150px;
+  }
+}
+
+#block {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 130px;
+  left: 480px;
+  animation: block 1s infinite linear;
+  opacity: 0.9;
+}
+
+@keyframes block {
+  0% {
+    left: 480px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+#block2 {
+  width: 40px;
+  height: 40px;
+  background-image: url(./image/surriken.png);
+  background-position: center;
+  background-size: cover;
+  animation: block2 1s linear infinite;
+}
+
+@keyframes block2 {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+#charactereSelectionBox {
+  background-color: rgb(89, 90, 90);
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: rgb(53, 52, 52) 0px 0px 30px 5px;
+  width: 300px;
+  margin: auto;
+  margin-top: 3vh;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+p {
+  color: aliceblue;
+  background-color: rgb(89, 90, 90);
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: rgb(53, 52, 52) 0px 0px 30px 5px;
+  width: 300px;
+  margin: auto;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-around;
+  text-shadow: rgb(0, 0, 0) 2px 0px 0px;
+  font-weight: 1000;
+}
+
+@keyframes moveSpritesheet {
+  from {
+    transform: translate3d(0px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+#iddle-right {
+  width: 32px;
+  height: 32px;
+  margin: auto;
+  margin-top: 2%;
+  overflow: hidden;
+}
+.four-step-animation {
+  animation: moveSpritesheet 0.7s steps(4) infinite;
+}
+
+.charactere-hitbox {
+  width: 32px;
+  height: 32px;
+  margin: auto;
+  margin-top: 2%;
+  overflow: hidden;
+}

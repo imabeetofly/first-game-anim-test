@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()" onclick="spriteJump()">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="game">
+      <div id="character">
+        <div id="playing-hitbox" class="charactere-hitbox">
+          <img
+            id="playing-spritesheet"
+            class="four-step-animation looking-right"
+            src="./image/iddle-right-spritesheet.png"
+            alt="tank"
+          />
+        </div>
+      </div>
+      <div id="block"><div id="block2"></div></div>
+    </div>
+    <p>animation demonstration</p>
+    <div id="charactereSelectionBox">
+      <div class="charactere-hitbox">
+        <img
+          class="iddle-right-spritesheet four-step-animation"
+          src="./image/iddle-right-spritesheet.png"
+          alt="hero"
+        />
+      </div>
+      <div class="charactere-hitbox">
+        <img
+          class="parry-right-spritesheet four-step-animation"
+          src="./image/parry-right-spritesheet.png"
+          alt="tank"
+        />
+      </div>
+      <div class="charactere-hitbox">
+        <img
+          class="attack-right-spritesheet four-step-animation"
+          src="./image/attack-right-spritesheet.png"
+          alt="warior"
+        />
+      </div>
+    </div>
+    <div id="charactereSelectionBox">
+      <div class="charactere-hitbox">
+        <img
+          class="iddle-left-spritesheet four-step-animation"
+          src="./image/iddle-left-spritesheet.png"
+          alt="hero"
+        />
+      </div>
+      <div class="charactere-hitbox">
+        <img
+          class="parry-left-spritesheet four-step-animation"
+          src="./image/parry-left-spritesheet.png"
+          alt="tank"
+        />
+      </div>
+      <div class="charactere-hitbox">
+        <img
+          class="attack-left-spritesheet four-step-animation"
+          src="./image/attack-left-spritesheet.png"
+          alt="warior"
+        />
+      </div>
+    </div>
+  </body>
+  <script src="test.js"></script>
+</html>
